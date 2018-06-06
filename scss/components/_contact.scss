@@ -1,0 +1,74 @@
+$contact-max-width:$grid-content;
+$contact-font-family:$font-family-montserrat;
+
+.contact{
+  font-family: $contact-font-family;
+  margin: auto;
+  max-width: $contact-max-width;
+}
+
+.contact__contact{
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.contact__contact--gratxi{
+  border-top: 1px $color-gray-content solid;
+}
+
+.contact__grid{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.contact__name{
+  
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact__info h2{
+  color:$color-gray-content;
+  font-size: 1rem;
+}
+
+.contact__info h3{
+  font-size: .8rem;
+  margin: auto;
+}
+
+.contact__info .icon{
+  height: 1rem;
+}
+
+@media #{$breakpoints-medium} {
+
+  .contact__contact{
+    padding: 6rem 0 6rem 0;
+  }
+
+  .contact__grid{
+    grid-template-columns: 50% 50%;
+  }
+
+  .contact__name{
+    font-size: 3.5rem;
+    width: 80%;
+  }
+
+  .contact__info{
+    text-align: left;
+  }
+
+  .contact__info h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media #{$breakpoints-large} {
+
+}
+
+@media #{$breakpoints-xlarge} {
+
+}
