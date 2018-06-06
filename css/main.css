@@ -4,6 +4,7 @@
   src: url("../../imports/typography/Montserrat-Bold.ttf"); }
 
 body {
+  background-color: #ffe482;
   margin: 0; }
 
 .vcenter {
@@ -14,6 +15,7 @@ body {
 
 .header {
   align-items: center;
+  background-color: white;
   max-width: 1280px;
   margin: auto;
   padding: 0;
@@ -103,8 +105,10 @@ body {
     background-color: transparent; } }
 
 .footer {
+  background-color: white;
   margin: auto;
   max-width: 1280px;
+  min-height: 10rem;
   position: relative;
   z-index: 15; }
 
@@ -113,7 +117,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   text-align: center;
-  padding: 0 2rem 0 2rem; }
+  padding: 4rem 2rem 0 2rem; }
 
 .footer__info {
   color: #656262;
@@ -147,6 +151,62 @@ body {
   .footer__rrss {
     flex: 0 1 20%; } }
 
-.example {
-  max-width: 1280px;
-  height: 80vh; }
+.management {
+  margin: auto;
+  max-width: 780px;
+  padding: 5rem 0 5rem 0;
+  position: relative;
+  z-index: 5; }
+
+.management__grid {
+  display: grid;
+  grid-template-rows: 50% 50%; }
+
+.management__artist {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden; }
+
+.management__img {
+  width: 100%; }
+
+.management__title {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.management__rrss {
+  display: none; }
+
+.management__rrss__link {
+  text-decoration: none;
+  transition: opacity .2s; }
+
+.management__rrss__link:hover {
+  opacity: .3; }
+
+@media only screen and (min-width: 768px) {
+  .management__grid {
+    grid-template-columns: 50% 50%; }
+  .management__info {
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: auto;
+    height: 100%;
+    padding-top: 5rem;
+    position: absolute;
+    text-align: center;
+    transition: opacity .2s;
+    top: 0;
+    opacity: 0;
+    width: 100%; }
+  .management__info:hover {
+    opacity: 1; }
+  .management__title {
+    color: white; }
+  .management__rrss {
+    display: inherit;
+    padding-top: 5rem; }
+  .management__rrss .icon {
+    fill: white;
+    height: 3rem;
+    padding: 2rem; } }
