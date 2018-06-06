@@ -61,6 +61,9 @@ body {
   transition: opacity .2s, visibility .2s;
   vertical-align: middle; }
 
+.header__menu__link:hover {
+  opacity: .6; }
+
 .icon--menu {
   height: 1.5rem;
   padding: .5rem;
@@ -109,24 +112,28 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  text-align: center; }
-
-.footer__flex .flex__box {
-  padding: 20px 0 0 0; }
+  text-align: center;
+  padding: 0 2rem 0 2rem; }
 
 .footer__info {
+  color: #656262;
   flex: 0 1 100%;
   transition: flex .5s; }
 
 .footer__info__link {
-  text-decoration: none; }
+  color: #656262;
+  text-decoration: underline; }
 
 .footer__rrss {
   flex: 0 1 100%;
   transition: flex .5s; }
 
 .footer__rrss__link {
-  text-decoration: none; }
+  text-decoration: none;
+  transition: opacity .2s; }
+
+.footer__rrss__link:hover {
+  opacity: .6; }
 
 .footer__rrss__link .icon {
   height: 2rem;
