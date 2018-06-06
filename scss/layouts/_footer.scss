@@ -2,8 +2,10 @@ $footer-max-width:$grid;
 $footer-info-font-color:$color-gray-content;
 
 .footer{
+  background-color:$color-white;
   margin: auto;
   max-width: $footer-max-width;
+  min-height:10rem;
   position: relative;
   z-index: 15;
 }
@@ -13,7 +15,7 @@ $footer-info-font-color:$color-gray-content;
   flex-flow: row wrap;
   justify-content: space-between;
   text-align: center;
-  padding:0 2rem 0 2rem;
+  padding:4rem 2rem 0 2rem;
 }
 
 .footer__flex .flex__box{

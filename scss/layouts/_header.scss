@@ -1,3 +1,4 @@
+$body-backgorund-color:$color-mostaza-fondo;
 $header-max-width: $grid;
 $header-title-font-family:$font-family-montserrat;
 $header-menu-backgorund-color:$color-gray-content;
@@ -8,6 +9,7 @@ $header-menu-link-box-shadow:$box-shadow-litle;
 $icon-menu-color:$color-white;
 
 body{
+  background-color:$body-backgorund-color;
   margin:0;
 }
 
@@ -20,6 +22,7 @@ body{
 
 .header{
   align-items: center;
+  background-color:$color-white;
   max-width: $header-max-width;
   margin: auto;
   padding: 0;
