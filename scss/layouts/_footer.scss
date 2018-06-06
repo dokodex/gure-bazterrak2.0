@@ -1,4 +1,5 @@
 $footer-max-width:$grid;
+$footer-info-font-color:$color-gray-content;
 
 .footer{
   margin: auto;
@@ -12,19 +13,22 @@ $footer-max-width:$grid;
   flex-flow: row wrap;
   justify-content: space-between;
   text-align: center;
+  padding:0 2rem 0 2rem;
 }
 
 .footer__flex .flex__box{
-  padding: 20px 0 0 0;
+
 }
 
 .footer__info{
+  color:$footer-info-font-color;
   flex: 0 1 100%;
   transition: flex .5s;
 }
 
 .footer__info__link{
-  text-decoration:none;
+  color:$footer-info-font-color;
+  text-decoration:underline;
 }
 
 .footer__rrss{
@@ -34,6 +38,11 @@ $footer-max-width:$grid;
 
 .footer__rrss__link{  
   text-decoration: none;
+  transition: opacity .2s;
+}
+
+.footer__rrss__link:hover{
+  opacity: .6;
 }
 
 .footer__rrss__link .icon{
