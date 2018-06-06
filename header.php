@@ -22,11 +22,15 @@
   <body>
     <div class="header">
       <div class="header__grid">
-        <div class="header__title">Example</div>
+        <div class="header__title"><a class="header__title__link"><img class="header__img" src="img/gb-logo.png"></a></div>
         <nav class="header__menu" id="header__mymenu">
           <a class="header__menu__responsive" href="javascript:void(0);" onclick="menuResponsive()"><?php require('imports/svg/menu.svg'); ?></a>
-          <a class="header__menu__link active" href="">HOME</a>
-          <a class="header__menu__link active" href="">STORE</a>          
+          <a class="header__menu__link active" href="">INICIO</a>
+          <a class="header__menu__link active" href="">MANAGEMENT</a>
+          <a class="header__menu__link active" href="">AGENDA</a>
+          <a class="header__menu__link active" href="">PROYECTOS</a>
+          <a class="header__menu__link active" href="">INFO</a>
+          <a class="header__menu__link active" href="">CONTACTO</a>  
         </nav>
       </div>
     </div>  

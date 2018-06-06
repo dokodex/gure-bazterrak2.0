@@ -3,12 +3,19 @@ $header-title-font-family:$font-family-montserrat;
 $header-menu-backgorund-color:$color-gray-content;
 $header-menu-font-family:$font-family-montserrat;
 $header-menu-font-color1:$color-white;
-$header-menu-font-color2:$color-gray-content;
+$header-menu-font-color2:black;
 $header-menu-link-box-shadow:$box-shadow-litle;
 $icon-menu-color:$color-white;
 
 body{
   margin:0;
+}
+
+.vcenter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column
 }
 
 .header{
@@ -30,6 +37,11 @@ body{
   font-size:2rem;
   font-weight: bold;
   float: left;
+}
+
+.header__img{
+  height:2rem;
+  padding:1rem;
 }
 
 .header__menu{
@@ -85,11 +97,15 @@ body{
 
 @media #{$breakpoints-medium} {
   .header__grid{
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 30% 70%;
   }
 
   .header__title{
     font-size: 3rem;
+  }
+
+  .header__img{
+    height:3rem;
   }
 
   .header__menu__responsive{
@@ -108,7 +124,7 @@ body{
 
   .header__menu__link{
     color:$header-menu-font-color2;
-    font-size: 1rem;
+    font-size: .8rem;
     opacity: 1;
     visibility: visible;
   }
